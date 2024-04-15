@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+<!-- FontAwesome CSS -->
+<link href="../../use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+
+<!-- jQuery-confirm CSS -->
+<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">
+
+<!-- Stripe custom CSS -->
+<link rel="stylesheet" href="../../gallery/static/css/stripe_style.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="../../gallery/static/css/main.css">
+
+		<link rel="shortcut icon" type="image/png" href="../../gallery/static/favicon.png">
+		 <!-- This is required when we use our custom jvascript -->
+
+<!-- jQuery JS -->
+<!-- Removed slim from jQuery because slim version does not contain ajax -->
+<script src="../../code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<!-- Tether JS -->
+<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+<!-- Bootstrap JS -->
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<!-- jQuery-confirm JS -->
+<script src="../../cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
+
+<!-- jsrender JS -->
+<!-- used to make form modules reusable -->
+<script src="../../cdnjs.cloudflare.com/ajax/libs/jsrender/0.9.90/jsrender.min.js"></script>
+
+<!-- If this isn't included then django will consider {{:name}} as a variable and throw an error -->
+
+<!-- stripe jsrender template form -->
+<script id="stripeTemplate" type="text/x-jsrender">
+	<!-- We don't need action and method attribute here as the form is handled by javascript only -->
+	<form class="payment-form" action="" method="post" id="payment-form" data-token="{{:publishKey}}" data-next-url="{{:nextUrl}}">
+		<div class="form-row">
+			<!-- <label for="card-element">
+				Credit or debit card
+			</label> -->
+			<!-- We added the class because we are using bootstrap, otherwise the field wouldn't be clearly visible -->
+			<div id="card-element" class="form-control">
+				<!-- a Stripe Element will be inserted here. -->
+			</div>
+
+			<!-- Used to display form errors -->
+			<div id="card-errors" role="alert"></div>
+		</div>
+
+		<button class="btn btn-primary payment-form-button my-3">{{:btnTitle}}</button>
+	</form>
+</script>
+
+
+
+<!-- Chart.js CDN-->
+<script src="../../cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+<!-- Stripe CDN JS -->
+<script src="https://js.stripe.com/v3/"></script>
+
+<!-- Django Secure AJAX JS -->
+<script src="../../gallery/static/js/csrf_ajax.js"></script>
+
+<!-- Custom stripe JS -->
+<script src="../../gallery/static/js/stripe_js.js"></script>
+
+<!-- Sales Graphs JS -->
+<script src="../../gallery/static/js/sales_graphs_js.js"></script>
+
+<!-- Custom JS -->
+<script src="../../gallery/static/js/cart_and_products_js.js"></script>
+<script src="../../gallery/static/js/accounts_custom_js.js"></script>
+<script src="../../gallery/static/js/checkout_js.js"></script>
+<script src="../../gallery/static/js/contact_form_js.js"></script>
+<script src="../../gallery/static/js/search_bar_js.js"></script>
+<script src="../../gallery/static/js/addresses_js.js"></script>
+
+		
+<title>Register</title>
+
+	<style>
+
+	</style>
+	</head>
+	<body>
+		
+<!--  -->
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color: #000000;">
+	<div class="container">
+		<a class="navbar-brand" href="../index.html">
+			AmazeKart 
+			<i class="fas fa-shopping-cart" aria-hidden="true"></i>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item ">
+					<a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<!-- <li class="nav-item ">
+					<a class="nav-link" href="">Contact</a>
+				</li> -->
+				<li class="nav-item ">
+					<a class="nav-link" href="../products/index.html">Products</a>
+				</li>
+				
+			</ul>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item ">
+					<a class="nav-link" href="../cart/index.html"><span class="cart-item-count"></span> <i class="fas fa-shopping-cart" aria-hidden="true"></i></a>
+				</li>
+				
+					<li class="nav-item ">
+						<a class="nav-link" href="../login/index.html">Login</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Register</a>
+					</li>
+				
+			</ul>
+			<ul class="navbar-nav ml-4">
+				<li><form method="GET" action="https://content/search/" class="form my-2 my-lg-0 search-form">
+	<div class="input-group">
+		<input class="form-control" type="text" placeholder="Search" name="q" aria-label="Search" value="">
+		<span class="input-group-btn">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search" aria-hidden="true"></i></button>
+		</span>
+	</div>
+</form></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+		<div id="wrap">
+		  <div id="main" class="clear-top">
+				
+
+				<div class="container">
+					
+
+<div class="row">
+	<div class="col-12 col-md-4 mx-auto my-3">
+		<h1 class="text-center">Register</h1>
+	</div>
+</div>
+<hr/>
+<div class="row">
+	<div class="col-12 col-md-4 mx-auto my-3">
+		<form class="account-form" method="POST" data-endpoint="/register/"> <input type='hidden' name='csrfmiddlewaretoken' value='6KZJX03MCl49FwpDCrf5kUSq1GVktOKGpJzH80Fjl5HAWk4KJZuR9blEQEfiBvEE' />
+  		<tr><th><label for="id_full_name">Full Name:</label></th><td><input type="text" name="full_name" class="form-control my-2" placeholder="Full Name" required id="id_full_name" /></td></tr>
+<tr><th><label for="id_email">Email:</label></th><td><input type="email" name="email" class="form-control my-2" placeholder="Email" required id="id_email" /></td></tr>
+<tr><th><label for="id_password1">Password:</label></th><td><input type="password" name="password1" class="form-control my-2" placeholder="Password" required id="id_password1" /></td></tr>
+<tr><th><label for="id_password2">Confirm Password:</label></th><td><input type="password" name="password2" class="form-control my-2" placeholder="Password" required id="id_password2" /></td></tr>
+  		<button type="submit" class="btn btn-primary my-1">Sign Up</button>
+		</form>
+	</div>
+</div>
+
+
+				</div>
+
+				<div class="container-fluid">
+					
+				</div>
+			</div>
+		</div>
+		<footer class="footer-custom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 footer-copyright">
+						<p class="text-center"><a class="anchor-black" href="../about/index.html">A B O U T</a></p>
+					</div>
+					<div class="col-md-4 mx-auto">
+						<h3 class="text-center">AmazeKart <i class="fas fa-shopping-cart" aria-hidden="true"></i></h3>
+						<p class="text-center">© 2022, AmazeKart</p>
+					</div>
+					<div class="col-md-4 social-networks">
+						<ul class="list-inline text-center">
+				
+						   <li class="list-inline-item">
+							   <a class="anchor-black" target="_blank" href="https://www.linkedin.com/in/mayur-jinde-795782201/">
+								   <i class="fab fa-linkedin-in" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						   </li>
+						   <li class="list-inline-item">
+							   <a class="anchor-black" target="_blank" href="https://www.instagram.com/sankethanagandi">
+								   <i class="fab fa-instagram" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						   </li>
+						   <li class="list-inline-item">
+							   <a class="anchor-black" target="_blank" href="https://www.facebook.com/mayur.jinde.73">
+								   <i class="fab fa-facebook-f" aria-hidden="true"></i>
+							   </a>
+						   </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		
+
+	</body>
+
+<!-- Mirrored from content/register/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Mar 2022 05:20:55 GMT -->
+</html>

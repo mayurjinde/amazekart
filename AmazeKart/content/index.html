@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+		integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+	<!-- FontAwesome CSS -->
+	<link href="../use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+
+	<!-- jQuery-confirm CSS -->
+	<link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">
+
+	<!-- Stripe custom CSS -->
+	<link rel="stylesheet" href="../gallery/static/css/stripe_style.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="../gallery/static/css/main.css">
+
+	<link rel="shortcut icon" type="image/png" href="../gallery/static/favicon.png">
+
+
+	<title>Home</title>
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color: #000000;">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				AmazeKart
+				<i class="fas fa-shopping-cart" aria-hidden="true"></i>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+
+					<li class="nav-item ">
+						<a class="nav-link" href="products/index.html">Products</a>
+					</li>
+
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item ">
+						<a class="nav-link" href="cart/index.html"><span class="cart-item-count"></span> <i
+								class="fas fa-shopping-cart" aria-hidden="true"></i></a>
+					</li>
+
+					<li class="nav-item ">
+						<a class="nav-link" href="login/index.html">Login</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link" href="http://localhost/php_program/">Register</a>
+					</li>
+
+				</ul>
+				<ul class="navbar-nav ml-4">
+					<li>
+						<form method="GET" action="https://content/search/" class="form my-2 my-lg-0 search-form">
+							<div class="input-group">
+								<input class="form-control" type="text" placeholder="Search" name="q"
+									aria-label="Search" value="">
+								<span class="input-group-btn">
+									<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i
+											class="fas fa-search" aria-hidden="true"></i></button>
+								</span>
+							</div>
+						</form>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div id="wrap">
+		<div id="main" class="clear-top">
+
+
+			<div class="container">
+
+			</div>
+
+			<div class="container-fluid">
+
+
+
+				<div id="kartHomeCarousel" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#kartHomeCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#kartHomeCarousel" data-slide-to="1"></li>
+						<li data-target="#kartHomeCarousel" data-slide-to="2"></li>
+						<li data-target="#kartHomeCarousel" data-slide-to="3"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img class="d-block w-100" src="../gallery/static/img/electronics.jpg" alt="First slide">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="../gallery/static/img/mobiles.jpg" alt="Second slide">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="../gallery/static/img/appliances.jpg" alt="Third slide">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="../gallery/static/img/sports.jpg" alt="Fourth slide">
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#kartHomeCarousel" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#kartHomeCarousel" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+
+				<div class="row">
+					<div class="col-12 mt-5 mb-2">
+						<h3 class="text-center"><b>Featured Products</b></h3>
+						<hr />
+					</div>
+
+					<div class="col my-2">
+						<div class="card" style="width: 14rem;">
+
+							<a href="products/samsung-75-inch-ultra-hd-led-smart-tv/index.html"><img
+									class="card-img-top" src="../gallery/media/products/3379515/3379515.jpg"
+									alt="Samsung (75 inch) Ultra HD LED Smart TV logo"
+									style="width: 14rem; height: 14rem;"></a>
+
+							<div class="card-block mx-2 my-3">
+								<p class="card-title text-center" style="font-size: 18px;"><a
+										href="products/samsung-75-inch-ultra-hd-led-smart-tv/index.html">Samsung (75
+										inch)...</a></p>
+								<!-- <p class="card-text"><p>• 40 W Speaker Output<br ...</p> -->
+								<p class="card-text" style="font-size: 18px;"><strong>$ 7499.99</strong></p>
+								<div class="text-center">
+									<!-- <a href="/products/samsung-75-inch-ultra-hd-led-smart-tv/" class="btn btn-primary my-2">View</a> -->
+									<!-- This is an example of using URL shorcuts in templates
+      	<a href="/products/samsung-75-inch-ultra-hd-led-smart-tv/" class="btn btn-warning">URL Shortcut</a>
+      -->
+									<!-- data-user attribute in form is user to check if the user is a guest or not. This is then used by javascript to display the library link -->
+									<form class="form-product-ajax" method="POST" action="https://content/cart/update/"
+										data-endpoint="/cart/update/" class="form"> <input type='hidden'
+											name='csrfmiddlewaretoken'
+											value='jop75Ou6HGtHG99yHOUB7vihxi5kXyLGCnZ5gO6Dqq68XXOFOm9nWMLvmgpi5fFE' />
+										<input type="hidden" name="product_id" value="12">
+										<span class="submit-span">
+
+											<button type="submit" class="btn btn-info"><i class="fas fa-cart-plus"
+													aria-hidden="true"></i> <i class="fas fa-long-arrow-alt-down"
+													aria-hidden="true"></i></button>
+
+										</span>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col my-2">
+						<div class="card" style="width: 14rem;">
+
+							<a href="products/google-pixel-2-just-black-64-gb/index.html"><img class="card-img-top"
+									src="../gallery/media/products/5346159/5346159.jpg"
+									alt="Google Pixel 2 (Just Black, 64 GB) logo"
+									style="width: 14rem; height: 14rem;"></a>
+
+							<div class="card-block mx-2 my-3">
+								<p class="card-title text-center" style="font-size: 18px;"><a
+										href="products/google-pixel-2-just-black-64-gb/index.html">Google Pixel 2
+										(J...</a></p>
+								<!-- <p class="card-text"><p>• 4 GB RAM | ...</p> -->
+								<p class="card-text" style="font-size: 18px;"><strong>$ 750.00</strong></p>
+								<div class="text-center">
+									<!-- <a href="/products/google-pixel-2-just-black-64-gb/" class="btn btn-primary my-2">View</a> -->
+									<!-- This is an example of using URL shorcuts in templates
+      	<a href="/products/google-pixel-2-just-black-64-gb/" class="btn btn-warning">URL Shortcut</a>
+      -->
+									<!-- data-user attribute in form is user to check if the user is a guest or not. This is then used by javascript to display the library link -->
+									<form class="form-product-ajax" method="POST" action="https://content/cart/update/"
+										data-endpoint="/cart/update/" class="form"> <input type='hidden'
+											name='csrfmiddlewaretoken'
+											value='jop75Ou6HGtHG99yHOUB7vihxi5kXyLGCnZ5gO6Dqq68XXOFOm9nWMLvmgpi5fFE' />
+										<input type="hidden" name="product_id" value="11">
+										<span class="submit-span">
+
+											<button type="submit" class="btn btn-info"><i class="fas fa-cart-plus"
+													aria-hidden="true"></i> <i class="fas fa-long-arrow-alt-down"
+													aria-hidden="true"></i></button>
+
+										</span>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col my-2">
+						<div class="card" style="width: 14rem;">
+
+							<a href="products/audio-technica-headphones/index.html"><img class="card-img-top"
+									src="../gallery/media/products/1267913/1267913.jpg"
+									alt="Audio Technica Headphones logo" style="width: 14rem; height: 14rem;"></a>
+
+							<div class="card-block mx-2 my-3">
+								<p class="card-title text-center" style="font-size: 18px;"><a
+										href="products/audio-technica-headphones/index.html">Audio Technica He...</a>
+								</p>
+								<!-- <p class="card-text"><p>• Design: Over the Head<br ...</p> -->
+								<p class="card-text" style="font-size: 18px;"><strong>$ 749.99</strong></p>
+								<div class="text-center">
+									<!-- <a href="/products/audio-technica-headphones/" class="btn btn-primary my-2">View</a> -->
+									<!-- This is an example of using URL shorcuts in templates
+      	<a href="/products/audio-technica-headphones/" class="btn btn-warning">URL Shortcut</a>
+      -->
+									<!-- data-user attribute in form is user to check if the user is a guest or not. This is then used by javascript to display the library link -->
+									<form class="form-product-ajax" method="POST" action="https://content/cart/update/"
+										data-endpoint="/cart/update/" class="form"> <input type='hidden'
+											name='csrfmiddlewaretoken'
+											value='jop75Ou6HGtHG99yHOUB7vihxi5kXyLGCnZ5gO6Dqq68XXOFOm9nWMLvmgpi5fFE' />
+										<input type="hidden" name="product_id" value="10">
+										<span class="submit-span">
+
+											<button type="submit" class="btn btn-info"><i class="fas fa-cart-plus"
+													aria-hidden="true"></i> <i class="fas fa-long-arrow-alt-down"
+													aria-hidden="true"></i></button>
+
+										</span>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col my-2">
+						<div class="card" style="width: 14rem;">
+
+							<a href="products/batman/index.html"><img class="card-img-top"
+									src="../gallery/media/products/940385/940385.jpg" alt="Batman Action Figure logo"
+									style="width: 14rem; height: 14rem;"></a>
+
+							<div class="card-block mx-2 my-3">
+								<p class="card-title text-center" style="font-size: 18px;"><a
+										href="products/batman/index.html">Batman Action Figure</a></p>
+								<!-- <p class="card-text"><p>He is the most feared ...</p> -->
+								<p class="card-text" style="font-size: 18px;"><strong>$ 499.99</strong></p>
+								<div class="text-center">
+									<!-- <a href="/products/batman/" class="btn btn-primary my-2">View</a> -->
+									<!-- This is an example of using URL shorcuts in templates
+      	<a href="/products/batman/" class="btn btn-warning">URL Shortcut</a>
+      -->
+									<!-- data-user attribute in form is user to check if the user is a guest or not. This is then used by javascript to display the library link -->
+									<form class="form-product-ajax" method="POST" action="https://content/cart/update/"
+										data-endpoint="/cart/update/" class="form"> <input type='hidden'
+											name='csrfmiddlewaretoken'
+											value='jop75Ou6HGtHG99yHOUB7vihxi5kXyLGCnZ5gO6Dqq68XXOFOm9nWMLvmgpi5fFE' />
+										<input type="hidden" name="product_id" value="2">
+										<span class="submit-span">
+
+											<button type="submit" class="btn btn-info"><i class="fas fa-cart-plus"
+													aria-hidden="true"></i> <i class="fas fa-long-arrow-alt-down"
+													aria-hidden="true"></i></button>
+
+										</span>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col my-2">
+						<div class="card" style="width: 14rem;">
+
+							<a href="products/alienware-gaming-laptop/index.html"><img class="card-img-top"
+									src="../gallery/media/products/5610967/5610967.jpg"
+									alt="Alienware Gaming Laptop logo" style="width: 14rem; height: 14rem;"></a>
+
+							<div class="card-block mx-2 my-3">
+								<p class="card-title text-center" style="font-size: 18px;"><a
+										href="products/alienware-gaming-laptop/index.html">Alienware Gaming ...</a></p>
+								<!-- <p class="card-text"><p>• NVIDIA GeForce GTX 1070 ...</p> -->
+								<p class="card-text" style="font-size: 18px;"><strong>$ 3000.00</strong></p>
+								<div class="text-center">
+									<!-- <a href="/products/alienware-gaming-laptop/" class="btn btn-primary my-2">View</a> -->
+									<!-- This is an example of using URL shorcuts in templates
+      	<a href="/products/alienware-gaming-laptop/" class="btn btn-warning">URL Shortcut</a>
+      -->
+									<!-- data-user attribute in form is user to check if the user is a guest or not. This is then used by javascript to display the library link -->
+									<form class="form-product-ajax" method="POST" action="https://content/cart/update/"
+										data-endpoint="/cart/update/" class="form"> <input type='hidden'
+											name='csrfmiddlewaretoken'
+											value='jop75Ou6HGtHG99yHOUB7vihxi5kXyLGCnZ5gO6Dqq68XXOFOm9nWMLvmgpi5fFE' />
+										<input type="hidden" name="product_id" value="3">
+										<span class="submit-span">
+
+											<button type="submit" class="btn btn-info"><i class="fas fa-cart-plus"
+													aria-hidden="true"></i> <i class="fas fa-long-arrow-alt-down"
+													aria-hidden="true"></i></button>
+
+										</span>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<br />
+				<div class="row">
+					<div class="col-12 mt-5 mb-2">
+						<h3 class="text-center"><b>Our Digital Products Collection</b></h3>
+						<hr />
+					</div>
+
+					<div class="col my-2">
+						<div class="card" style="width: 14rem;">
+
+							<a href="products/an-introduction-to-linux-command-shell-digital/index.html"><img
+									class="card-img-top" src="../gallery/media/products/1642845/1642845.jpg"
+									alt="An Introduction to Linux Command Shell [Digital] logo"
+									style="width: 14rem; height: 14rem;"></a>
+
+							<div class="card-block mx-2 my-3">
+								<p class="card-title text-center" style="font-size: 18px;"><a
+										href="products/an-introduction-to-linux-command-shell-digital/index.html">An
+										Introduction t...</a></p>
+								<!-- <p class="card-text"><p>PDF Format of the book.</p></p> -->
+								<p class="card-text" style="font-size: 18px;"><strong>$ 5.99</strong></p>
+								<div class="text-center">
+									<!-- <a href="/products/an-introduction-to-linux-command-shell-digital/" class="btn btn-primary my-2">View</a> -->
+									<!-- This is an example of using URL shorcuts in templates
+      	<a href="/products/an-introduction-to-linux-command-shell-digital/" class="btn btn-warning">URL Shortcut</a>
+      -->
+									<!-- data-user attribute in form is user to check if the user is a guest or not. This is then used by javascript to display the library link -->
+									<form class="form-product-ajax" method="POST" action="https://content/cart/update/"
+										data-endpoint="/cart/update/" class="form"> <input type='hidden'
+											name='csrfmiddlewaretoken'
+											value='jop75Ou6HGtHG99yHOUB7vihxi5kXyLGCnZ5gO6Dqq68XXOFOm9nWMLvmgpi5fFE' />
+										<input type="hidden" name="product_id" value="6" data-is-digital="true">
+										<span class="submit-span">
+
+											<button type="submit" class="btn btn-info"><i class="fas fa-cart-plus"
+													aria-hidden="true"></i> <i class="fas fa-long-arrow-alt-down"
+													aria-hidden="true"></i></button>
+
+										</span>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col my-2">
+						<div class="card" style="width: 14rem;">
+
+							<a href="products/the-best-of-ces-2018-video/index.html"><img class="card-img-top"
+									src="../gallery/media/products/5608862/5608862.jpg"
+									alt="The Best of CES 2018 Video logo" style="width: 14rem; height: 14rem;"></a>
+
+							<div class="card-block mx-2 my-3">
+								<p class="card-title text-center" style="font-size: 18px;"><a
+										href="products/the-best-of-ces-2018-video/index.html">The Best of CES 2...</a>
+								</p>
+								<!-- <p class="card-text"><p>Watch the best gadgets of ...</p> -->
+								<p class="card-text" style="font-size: 18px;"><strong>$ 15.50</strong></p>
+								<div class="text-center">
+									<!-- <a href="/products/the-best-of-ces-2018-video/" class="btn btn-primary my-2">View</a> -->
+									<!-- This is an example of using URL shorcuts in templates
+      	<a href="/products/the-best-of-ces-2018-video/" class="btn btn-warning">URL Shortcut</a>
+      -->
+									<!-- data-user attribute in form is user to check if the user is a guest or not. This is then used by javascript to display the library link -->
+									<form class="form-product-ajax" method="POST" action="https://content/cart/update/"
+										data-endpoint="/cart/update/" class="form"> <input type='hidden'
+											name='csrfmiddlewaretoken'
+											value='jop75Ou6HGtHG99yHOUB7vihxi5kXyLGCnZ5gO6Dqq68XXOFOm9nWMLvmgpi5fFE' />
+										<input type="hidden" name="product_id" value="7" data-is-digital="true">
+										<span class="submit-span">
+
+											<button type="submit" class="btn btn-info"><i class="fas fa-cart-plus"
+													aria-hidden="true"></i> <i class="fas fa-long-arrow-alt-down"
+													aria-hidden="true"></i></button>
+
+										</span>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col my-2">
+						<div class="card" style="width: 14rem;">
+
+							<a href="products/top-edm-songs-album-digital/index.html"><img class="card-img-top"
+									src="../gallery/media/products/2184742/2184742.jpg"
+									alt="Top EDM Songs Album [Digital] logo" style="width: 14rem; height: 14rem;"></a>
+
+							<div class="card-block mx-2 my-3">
+								<p class="card-title text-center" style="font-size: 18px;"><a
+										href="products/top-edm-songs-album-digital/index.html">Top EDM Songs Alb...</a>
+								</p>
+								<!-- <p class="card-text"><p>Contains the following songs:<br />• ...</p> -->
+								<p class="card-text" style="font-size: 18px;"><strong>$ 10.00</strong></p>
+								<div class="text-center">
+									<!-- <a href="/products/top-edm-songs-album-digital/" class="btn btn-primary my-2">View</a> -->
+									<!-- This is an example of using URL shorcuts in templates
+      	<a href="/products/top-edm-songs-album-digital/" class="btn btn-warning">URL Shortcut</a>
+      -->
+									<!-- data-user attribute in form is user to check if the user is a guest or not. This is then used by javascript to display the library link -->
+									<form class="form-product-ajax" method="POST" action="https://content/cart/update/"
+										data-endpoint="/cart/update/" class="form"> <input type='hidden'
+											name='csrfmiddlewaretoken'
+											value='jop75Ou6HGtHG99yHOUB7vihxi5kXyLGCnZ5gO6Dqq68XXOFOm9nWMLvmgpi5fFE' />
+										<input type="hidden" name="product_id" value="8" data-is-digital="true">
+										<span class="submit-span">
+
+											<button type="submit" class="btn btn-info"><i class="fas fa-cart-plus"
+													aria-hidden="true"></i> <i class="fas fa-long-arrow-alt-down"
+													aria-hidden="true"></i></button>
+
+										</span>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col my-2">
+						<div class="card" style="width: 14rem;">
+
+							<a href="products/star-wars-the-last-jedi-blu-ray/index.html"><img class="card-img-top"
+									src="../gallery/media/products/4028139/4028139.jpg"
+									alt="Star Wars- The Last Jedi [Blu-Ray] logo"
+									style="width: 14rem; height: 14rem;"></a>
+
+							<div class="card-block mx-2 my-3">
+								<p class="card-title text-center" style="font-size: 18px;"><a
+										href="products/star-wars-the-last-jedi-blu-ray/index.html">Star Wars- The
+										La...</a></p>
+								<!-- <p class="card-text"><p>Watch the Episode VIII of ...</p> -->
+								<p class="card-text" style="font-size: 18px;"><strong>$ 50.00</strong></p>
+								<div class="text-center">
+									<!-- <a href="/products/star-wars-the-last-jedi-blu-ray/" class="btn btn-primary my-2">View</a> -->
+									<!-- This is an example of using URL shorcuts in templates
+      	<a href="/products/star-wars-the-last-jedi-blu-ray/" class="btn btn-warning">URL Shortcut</a>
+      -->
+									<!-- data-user attribute in form is user to check if the user is a guest or not. This is then used by javascript to display the library link -->
+									<form class="form-product-ajax" method="POST" action="https://content/cart/update/"
+										data-endpoint="/cart/update/" class="form"> <input type='hidden'
+											name='csrfmiddlewaretoken'
+											value='jop75Ou6HGtHG99yHOUB7vihxi5kXyLGCnZ5gO6Dqq68XXOFOm9nWMLvmgpi5fFE' />
+										<input type="hidden" name="product_id" value="14" data-is-digital="true">
+										<span class="submit-span">
+
+											<button type="submit" class="btn btn-info"><i class="fas fa-cart-plus"
+													aria-hidden="true"></i> <i class="fas fa-long-arrow-alt-down"
+													aria-hidden="true"></i></button>
+
+										</span>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<br />
+
+
+
+			</div>
+		</div>
+	</div>
+	<footer class="footer-custom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 footer-copyright">
+					<p class="text-center"><a class="anchor-black" href="about/index.html">A B O U T</a></p>
+				</div>
+				<div class="col-md-4 mx-auto">
+					<h3 class="text-center">AmazeKart <i class="fas fa-shopping-cart" aria-hidden="true"></i></h3>
+					<p class="text-center">© 2022, AmazeKart</p>
+				</div>
+				<div class="col-md-4 social-networks">
+					<ul class="list-inline text-center">
+
+						<li class="list-inline-item">
+							<a class="anchor-black" target="_blank"
+								href="https://www.linkedin.com/in/mayur-jinde-795782201/">
+								<i class="fab fa-linkedin-in"
+									aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</li>
+						<li class="list-inline-item">
+							<a class="anchor-black" target="_blank" href="https://www.instagram.com/sankethanagandi">
+								<i class="fab fa-instagram"
+									aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</li>
+						<li class="list-inline-item">
+							<a class="anchor-black" target="_blank" href="https://www.facebook.com/mayur.jinde.73">
+								<i class="fab fa-facebook-f" aria-hidden="true"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+</body>
+
+<!-- Mirrored from content/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Mar 2022 05:20:46 GMT -->
+
+</html>
